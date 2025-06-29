@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { Card } from 'components/card';
 import { ContextAlert } from 'components/context-alert';
 import { Markdown } from 'components/markdown';
-import { RandomQuote } from 'components/random-quote';
 import { getNetlifyContext } from 'utils';
 
 const contextExplainer = `
@@ -225,12 +224,7 @@ export default function Page() {
                 </div>
             </section>
 
-            {/* Dynamic Content Sections (for Netlify deployment) */}
-            <section className="flex flex-col gap-4">
-                <Markdown content={preDynamicContentExplainer} />
-                <RandomQuote />
-                <Markdown content={postDynamicContentExplainer} />
-            </section>
+            {/* END: Removed quote and dynamic content section as requested */}
         </div>
     );
 }
