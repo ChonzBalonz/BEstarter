@@ -303,6 +303,17 @@
     h4 {
         font-size: 5vw !important;
     }
+
+    /* Responsive padding for main content containers */
+    .section,
+    .our-services-section,
+    .permanent-makeup-section,
+    .card {
+        padding-left: 6vw !important;
+        padding-right: 6vw !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
 }
 
 @media (max-width: 480px) {
@@ -326,5 +337,16 @@
     h3,
     h4 {
         font-size: 6vw !important;
+    }
+
+    /* Responsive padding for main content containers */
+    .section,
+    .our-services-section,
+    .permanent-makeup-section,
+    .card {
+        padding-left: 4vw !important;
+        padding-right: 4vw !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 }
