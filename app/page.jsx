@@ -108,18 +108,31 @@ export default function Page() {
                         here to help!
                     </p>
                 </div>
-                <form style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                <form
+                    name="contact"
+                    method="POST"
+                    data-netlify="true"
+                    netlify-honeypot="bot-field"
+                    style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '1rem' }}
+                >
+                    {/* Netlify form hidden input */}
+                    <input type="hidden" name="form-name" value="contact" />
+                    {/* Honeypot field for bots */}
+                    <input type="hidden" name="bot-field" />
                     <input
                         type="text"
+                        name="name"
                         placeholder="Your First Name Here"
                         style={{ padding: '0.75rem', borderRadius: '0.5rem', border: 'none' }}
                     />
                     <input
                         type="email"
+                        name="email"
                         placeholder="Your Email Address*"
                         style={{ padding: '0.75rem', borderRadius: '0.5rem', border: 'none' }}
                     />
                     <textarea
+                        name="message"
                         placeholder="Your Message Here*"
                         style={{ padding: '0.75rem', borderRadius: '0.5rem', border: 'none', minHeight: '100px' }}
                     />
