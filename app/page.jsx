@@ -4,6 +4,7 @@ import { Card } from 'components/card';
 import { ContextAlert } from 'components/context-alert';
 import { Markdown } from 'components/markdown';
 import { getNetlifyContext } from 'utils';
+import Faq from 'components/faq';
 
 const contextExplainer = `
 The card below is rendered on the server based on the value of \`process.env.CONTEXT\` 
@@ -99,48 +100,7 @@ export default function Page() {
             </section>
 
             {/* FAQ Section */}
-            <section style={{ maxWidth: 700, margin: '2rem auto' }}>
-                <details style={{ marginBottom: '1rem' }}>
-                    <summary style={{ fontWeight: 'bold' }}>What Courses do you offer?</summary>
-                    <p>Microblading, Lip Fillers, and more.</p>
-                </details>
-                <details style={{ marginBottom: '1rem' }}>
-                    <summary style={{ fontWeight: 'bold' }}>What is the Course Outline?</summary>
-                    <p>Comprehensive training covering theory and hands-on practice.</p>
-                </details>
-                <details style={{ marginBottom: '1rem' }}>
-                    <summary style={{ fontWeight: 'bold' }}>What is included?</summary>
-                    <p>All materials and certification upon completion.</p>
-                </details>
-                <details style={{ marginBottom: '1rem' }}>
-                    <summary style={{ fontWeight: 'bold' }}>Who is this course for?</summary>
-                    <p>Anyone interested in beauty and permanent makeup.</p>
-                </details>
-                <details style={{ marginBottom: '1rem' }}>
-                    <summary style={{ fontWeight: 'bold' }}>Will I be able to work on a live model?</summary>
-                    <p>Yes, live model practice is included.</p>
-                </details>
-                <details style={{ marginBottom: '1rem' }}>
-                    <summary style={{ fontWeight: 'bold' }}>What will you learn?</summary>
-                    <p>Techniques, safety, and business tips.</p>
-                </details>
-                <details style={{ marginBottom: '1rem' }}>
-                    <summary style={{ fontWeight: 'bold' }}>Is there a deposit required?</summary>
-                    <p>Yes, a deposit is required to secure your spot.</p>
-                </details>
-                <details style={{ marginBottom: '1rem' }}>
-                    <summary style={{ fontWeight: 'bold' }}>Is there licensing required?</summary>
-                    <p>Check your local regulations for licensing requirements.</p>
-                </details>
-                <details style={{ marginBottom: '1rem' }}>
-                    <summary style={{ fontWeight: 'bold' }}>Do you offer financing?</summary>
-                    <p>Financing options are available.</p>
-                </details>
-                <details style={{ marginBottom: '1rem' }}>
-                    <summary style={{ fontWeight: 'bold' }}>Our Classes</summary>
-                    <p>Contact us for the latest class schedule.</p>
-                </details>
-            </section>
+            <Faq />
 
             {/* Contact Form */}
             <section
