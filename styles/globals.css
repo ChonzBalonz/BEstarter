@@ -37,6 +37,11 @@
         @apply px-1 py-0.5 font-mono rounded bg-neutral-900 text-yellow-200;
         font-size: 0.9em;
     }
+
+    body {
+        background: #000 !important;
+        color: #fff;
+    }
 }
 
 @layer components {
