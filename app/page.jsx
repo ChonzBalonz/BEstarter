@@ -29,6 +29,50 @@ const ctx = getNetlifyContext();
 export default function Page() {
     return (
         <div className="bg-black text-white min-h-screen">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        '@context': 'https://schema.org',
+                        '@type': 'BeautySalon',
+                        name: 'Beauty Empress',
+                        image: 'https://beautyempress.com/public/images/corgi.jpg',
+                        '@id': 'https://beautyempress.com/',
+                        url: 'https://beautyempress.com/',
+                        telephone: '+1-555-123-4567',
+                        address: {
+                            '@type': 'PostalAddress',
+                            streetAddress: '12337 S Route 59 Unit 131',
+                            addressLocality: 'Plainfield',
+                            addressRegion: 'IL',
+                            postalCode: '60585',
+                            addressCountry: 'US',
+                        },
+                        geo: {
+                            '@type': 'GeoCoordinates',
+                            latitude: 41.626,
+                            longitude: -88.205,
+                        },
+                        openingHoursSpecification: [{
+                            '@type': 'OpeningHoursSpecification',
+                            dayOfWeek: [
+                                'Monday',
+                                'Tuesday',
+                                'Wednesday',
+                                'Thursday',
+                                'Friday',
+                                'Saturday',
+                            ],
+                            opens: '09:00',
+                            closes: '18:00',
+                        }],
+                        sameAs: [
+                            'https://www.facebook.com/yourbeautyempress',
+                            'https://www.instagram.com/yourbeautyempress'
+                        ]
+                    })
+                }}
+            />
             {/* Hero Section */}
             <section className="relative w-screen h-[90vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-full z-0">
