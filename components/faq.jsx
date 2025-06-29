@@ -51,8 +51,9 @@ const faqData = [
                 & a full box of universal cartridges. <br />
                 • Full-sized pigments suitable for clients of all skin tones. <br />
                 • Fully loaded and in-depth student training manual for all beginners. <br />
-                • In-person live demos from your instructor. <br />• Live model practice for all in-person training
-                courses (unless stated otherwise for specific courses) <br />
+                • In-person live demos from your instructor. <br />
+                • Live model practice for all in-person training courses (unless stated otherwise for specific courses){' '}
+                <br />
                 • Certificate of Completion. <br />• After class support & direct contact with your Instructor
             </>
         )
@@ -62,7 +63,7 @@ const faqData = [
         answer: (
             <>
                 • Beginners with no experience looking to join the brow industry <br />
-                • Students who have taken previous brow classes but just don&apos;t feel confident <br />
+                • Students who have taken previous brow classes but just don't feel confident <br />
                 • Existing artists who are looking to advance their skills or add new services <br />• Anyone who wants
                 to make their own hours, have work-life balance & gain financial freedom
             </>
@@ -73,9 +74,9 @@ const faqData = [
         answer: (
             <>
                 All in-person beginner and advanced training includes a live model practice portion where students will
-                be able to apply what they&apos;ve learned onto a live model with close supervision from your
-                instructors. During this time you will be able to take pictures and videos of your client and we will
-                teach you how to effectively edit for your new portfolio to market your business.
+                be able to apply what they've learned onto a live model with close supervision from your instructors.
+                During this time you will be able to take pictures and videos of your client and we will teach you how
+                to effectively edit for your new portfolio to market your business.
             </>
         )
     },
