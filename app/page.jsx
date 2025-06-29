@@ -53,7 +53,8 @@ export default function Page() {
                         textAlign: 'center',
                         letterSpacing: '0.1em',
                         color: '#fff',
-                        textShadow: '0 2px 16px rgba(0,0,0,0.5)'
+                        textShadow: '0 2px 16px rgba(0,0,0,0.5)',
+                        opacity: 0.7
                     }}
                 >
                     BEAUTY
