@@ -106,7 +106,7 @@ export default function Page() {
             <section
                 style={{
                     maxWidth: 900,
-                    margin: '3rem auto',
+                    margin: '3rem auto 6rem auto', // increased bottom margin
                     display: 'flex',
                     flexWrap: 'wrap',
                     gap: '2rem',
@@ -116,8 +116,8 @@ export default function Page() {
                 <div style={{ flex: 1 }}>
                     <h2 style={{ fontSize: '2rem', fontWeight: 'bold' }}>Get in Touch</h2>
                     <p>
-                        Contact us for inquiries about microblading, lip fillers, and our beauty classes. We're here to
-                        help!
+                        Contact us for inquiries about microblading, lip fillers, and our beauty classes. We&apos;re
+                        here to help!
                     </p>
                 </div>
                 <form style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
@@ -155,7 +155,7 @@ export default function Page() {
             <section
                 style={{
                     maxWidth: 900,
-                    margin: '3rem auto',
+                    margin: '3rem auto 6rem auto', // increased bottom margin
                     display: 'flex',
                     flexWrap: 'wrap',
                     gap: '2rem',
