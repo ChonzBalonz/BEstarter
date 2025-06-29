@@ -54,9 +54,7 @@ export default function Page() {
                         letterSpacing: '0.1em'
                     }}
                 >
-                    BEAUTY
-                    <br />
-                    EMPRESS
+                    Beauty Empress
                 </h1>
             </section>
 
@@ -225,6 +223,13 @@ export default function Page() {
                         title="Salon Location"
                     ></iframe>
                 </div>
+            </section>
+
+            {/* Dynamic Content Sections (for Netlify deployment) */}
+            <section className="flex flex-col gap-4">
+                <Markdown content={preDynamicContentExplainer} />
+                <RandomQuote />
+                <Markdown content={postDynamicContentExplainer} />
             </section>
         </div>
     );
