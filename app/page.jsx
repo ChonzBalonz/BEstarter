@@ -5,6 +5,7 @@ import { ContextAlert } from 'components/context-alert';
 import { Markdown } from 'components/markdown';
 import { getNetlifyContext } from 'utils';
 import Faq from 'components/faq';
+import BookButton from 'components/BookButton';
 
 const contextExplainer = `
 The card below is rendered on the server based on the value of \`process.env.CONTEXT\` 
@@ -65,20 +66,7 @@ export default function Page() {
 
             {/* Our Services */}
             <section style={{ textAlign: 'center', margin: '2rem 0' }}>
-                <button
-                    style={{
-                        padding: '1rem 2rem',
-                        borderRadius: '2rem',
-                        border: '1px solid #fff',
-                        background: 'none',
-                        color: '#fff',
-                        fontWeight: 'bold',
-                        fontSize: '1.1rem',
-                        marginBottom: '1rem'
-                    }}
-                >
-                    Book Service Or Class
-                </button>
+                <BookButton />
                 <div style={{ maxWidth: 700, margin: '0 auto' }}>
                     <h3 style={{ fontSize: '2rem', fontWeight: 'bold', margin: '1.5rem 0' }}>Our Services</h3>
                     <p>Explore our beauty services, including microblading and lip fillers, tailored for you.</p>
