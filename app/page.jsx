@@ -142,14 +142,8 @@ export default function Page() {
                     />
                     <button
                         type="submit"
-                        style={{
-                            padding: '0.75rem',
-                            borderRadius: '2rem',
-                            border: 'none',
-                            background: '#fff',
-                            color: '#000',
-                            fontWeight: 'bold'
-                        }}
+                        className="btn"
+                        style={{ minWidth: 140, fontSize: '1.1rem', marginTop: '0.5rem' }}
                     >
                         Message
                     </button>
