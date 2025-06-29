@@ -15,7 +15,7 @@ const faqData = [
                 <br />
                 Nano Brows
                 <br />
-                Microblade & Shading
+                Microblade &amp; Shading
                 <br />
                 Nano Combo Brows
             </>
@@ -36,9 +36,9 @@ const faqData = [
                 • Students work on a live model <br />
                 • In depth PMU Theory + all guidelines <br />
                 • Hands-on exercises on practice skin <br />
-                • Full supplies & vendors list <br />
+                • Full supplies &amp; vendors list <br />
                 • Secret photo editing tips <br />
-                • How to get started & simple steps to acquire clientele <br />• Certificate of Completion
+                • How to get started &amp; simple steps to acquire clientele <br />• Certificate of Completion
             </>
         )
     },
@@ -46,15 +46,15 @@ const faqData = [
         question: 'What is included?',
         answer: (
             <>
-                • $350+ premium kit, supplies & all necessary tools. <br />
+                • $350+ premium kit, supplies &amp; all necessary tools. <br />
                 • Professional wireless tattoo machine that can be used for brows, lips, eyeliner, and fine line tattoos
-                & a full box of universal cartridges. <br />
+                &amp; a full box of universal cartridges. <br />
                 • Full-sized pigments suitable for clients of all skin tones. <br />
                 • Fully loaded and in-depth student training manual for all beginners. <br />
                 • In-person live demos from your instructor. <br />
                 • Live model practice for all in-person training courses (unless stated otherwise for specific courses){' '}
                 <br />
-                • Certificate of Completion. <br />• After class support & direct contact with your Instructor
+                • Certificate of Completion. <br />• After class support &amp; direct contact with your Instructor
             </>
         )
     },
@@ -63,9 +63,9 @@ const faqData = [
         answer: (
             <>
                 • Beginners with no experience looking to join the brow industry <br />
-                • Students who have taken previous brow classes but just don't feel confident <br />
+                • Students who have taken previous brow classes but just don&apos;t feel confident <br />
                 • Existing artists who are looking to advance their skills or add new services <br />• Anyone who wants
-                to make their own hours, have work-life balance & gain financial freedom
+                to make their own hours, have work-life balance &amp; gain financial freedom
             </>
         )
     },
@@ -74,9 +74,9 @@ const faqData = [
         answer: (
             <>
                 All in-person beginner and advanced training includes a live model practice portion where students will
-                be able to apply what they've learned onto a live model with close supervision from your instructors.
-                During this time you will be able to take pictures and videos of your client and we will teach you how
-                to effectively edit for your new portfolio to market your business.
+                be able to apply what they&apos;ve learned onto a live model with close supervision from your
+                instructors. During this time you will be able to take pictures and videos of your client and we will
+                teach you how to effectively edit for your new portfolio to market your business.
             </>
         )
     },
@@ -85,18 +85,18 @@ const faqData = [
         answer: (
             <>
                 • Intro to Brows or Lip Blush Theory <br />
-                • Brow mapping & design <br />
-                • Color theory & pigments <br />
-                • Skin anatomy, skin types & conditions <br />
+                • Brow mapping &amp; design <br />
+                • Color theory &amp; pigments <br />
+                • Skin anatomy, skin types &amp; conditions <br />
                 • Procedural guidelines <br />
                 • Color corrections <br />
-                • Proper Health & Sanitation Practices <br />
+                • Proper Health &amp; Sanitation Practices <br />
                 • Machine Fundamentals <br />
                 • What to avoid <br />
-                • Supplies & Vendors <br />
-                • Photo & video editing apps & tips <br />
-                • Setting your prices & business practices <br />
-                • Marketing & how to acquire clientele <br />• 60 pages of fully loaded materials
+                • Supplies &amp; Vendors <br />
+                • Photo &amp; video editing apps &amp; tips <br />
+                • Setting your prices &amp; business practices <br />
+                • Marketing &amp; how to acquire clientele <br />• 60 pages of fully loaded materials
             </>
         )
     },
@@ -144,7 +144,7 @@ const faqData = [
                     <strong>Lip Blush:</strong> $1,800.00
                 </div>
                 <div>
-                    <strong>Microblade & Shading:</strong> $2,400.00
+                    <strong>Microblade &amp; Shading:</strong> $2,400.00
                 </div>
                 <div>
                     <strong>Ombré Powder Brows:</strong> $1,800.00
