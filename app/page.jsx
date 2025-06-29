@@ -6,6 +6,7 @@ import { Markdown } from 'components/markdown';
 import { getNetlifyContext } from 'utils';
 import Faq from 'components/faq';
 import BookButton from 'components/BookButton';
+import HeroSlideshow from 'components/HeroSlideshow';
 
 const contextExplainer = `
 The card below is rendered on the server based on the value of \`process.env.CONTEXT\` 
@@ -32,19 +33,17 @@ export default function Page() {
             <section
                 style={{
                     position: 'relative',
-                    height: '70vh',
+                    width: '100vw',
+                    height: '90vh',
                     display: 'flex',
                     alignItems: 'center',
-                    justifyContent: 'center'
+                    justifyContent: 'center',
+                    overflow: 'hidden'
                 }}
             >
-                <Image
-                    src="/images/corgi.jpg" // Replace with your hero image
-                    alt="Beauty Empress Hero"
-                    layout="fill"
-                    objectFit="cover"
-                    style={{ filter: 'brightness(0.5)' }}
-                />
+                <div style={{ position: 'absolute', top: 0, left: 0, width: '100vw', height: '90vh', zIndex: 0 }}>
+                    <HeroSlideshow />
+                </div>
                 <h1
                     style={{
                         position: 'relative',
@@ -52,10 +51,14 @@ export default function Page() {
                         fontSize: '4rem',
                         fontWeight: 'bold',
                         textAlign: 'center',
-                        letterSpacing: '0.1em'
+                        letterSpacing: '0.1em',
+                        color: '#fff',
+                        textShadow: '0 2px 16px rgba(0,0,0,0.5)'
                     }}
                 >
-                    Beauty Empress
+                    BEAUTY
+                    <br />
+                    EMPRESS
                 </h1>
             </section>
 
@@ -94,7 +97,7 @@ export default function Page() {
             <section
                 style={{
                     maxWidth: 900,
-                    margin: '3rem auto 6rem auto', // increased bottom margin
+                    margin: '3rem auto 6rem auto',
                     display: 'flex',
                     flexWrap: 'wrap',
                     gap: '2rem',
@@ -156,7 +159,7 @@ export default function Page() {
             <section
                 style={{
                     maxWidth: 900,
-                    margin: '3rem auto 6rem auto', // increased bottom margin
+                    margin: '3rem auto 6rem auto',
                     display: 'flex',
                     flexWrap: 'wrap',
                     gap: '2rem',
@@ -184,8 +187,6 @@ export default function Page() {
                     ></iframe>
                 </div>
             </section>
-
-            {/* END: Removed quote and dynamic content section as requested */}
         </div>
     );
 }
