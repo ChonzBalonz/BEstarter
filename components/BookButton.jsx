@@ -10,71 +10,25 @@ export default function BookButton({
     return (
         <>
             <button
-                className="btn"
-                style={{
-                    padding: '1rem 2rem',
-                    borderRadius: '2rem',
-                    border: '1px solid #2bdcd2',
-                    background: 'linear-gradient(90deg, #2bdcd2 0%, #016968 100%)',
-                    color: '#171717',
-                    fontWeight: 'bold',
-                    fontSize: '1.1rem',
-                    marginBottom: '1rem',
-                    boxShadow: '0 4px 16px 0 rgba(43,220,210,0.15)',
-                    transition: 'transform 0.1s',
-                    cursor: 'pointer'
-                }}
-                onMouseDown={e => (e.currentTarget.style.transform = 'scale(0.97)')}
-                onMouseUp={e => (e.currentTarget.style.transform = 'scale(1)')}
-                onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}
+                className="px-8 py-4 rounded-full border border-cyan-400 bg-gradient-to-r from-cyan-400 to-teal-800 text-gray-900 font-bold text-lg mb-4 shadow-lg transition-transform duration-100 active:scale-95 hover:from-cyan-300 hover:to-teal-700 focus:outline-none focus:ring-2 focus:ring-pink-500"
+                onMouseDown={(e) => (e.currentTarget.style.transform = 'scale(0.97)')}
+                onMouseUp={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+                onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}
                 onClick={() => setOpen(true)}
             >
                 {label}
             </button>
             {open && (
                 <div
-                    style={{
-                        position: 'fixed',
-                        top: 0,
-                        left: 0,
-                        width: '100vw',
-                        height: '100vh',
-                        background: 'rgba(0,0,0,0.7)',
-                        zIndex: 1000,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center'
-                    }}
+                    className="fixed inset-0 bg-black bg-opacity-70 z-[1000] flex items-center justify-center"
                     onClick={() => setOpen(false)}
                 >
                     <div
-                        style={{
-                            background: '#fff',
-                            borderRadius: '10px',
-                            maxWidth: '900px',
-                            width: '90vw',
-                            height: '80vh',
-                            position: 'relative',
-                            overflow: 'hidden',
-                            boxShadow: '0 4px 32px rgba(0,0,0,0.2)'
-                        }}
-                        onClick={e => e.stopPropagation()}
+                        className="bg-white rounded-xl max-w-3xl w-[90vw] h-[80vh] relative overflow-hidden shadow-2xl"
+                        onClick={(e) => e.stopPropagation()}
                     >
                         <button
-                            style={{
-                                position: 'absolute',
-                                top: 10,
-                                right: 10,
-                                background: '#e11d48',
-                                color: '#fff',
-                                border: 'none',
-                                borderRadius: '50%',
-                                width: 32,
-                                height: 32,
-                                fontSize: 18,
-                                cursor: 'pointer',
-                                zIndex: 2
-                            }}
+                            className="absolute top-2.5 right-2.5 bg-pink-700 text-white border-none rounded-full w-8 h-8 text-lg flex items-center justify-center cursor-pointer z-10 hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-400"
                             onClick={() => setOpen(false)}
                             aria-label="Close booking modal"
                         >
@@ -85,8 +39,7 @@ export default function BookButton({
                             title="Schedule Appointment"
                             width="100%"
                             height="100%"
-                            frameBorder="0"
-                            style={{ border: 'none', minHeight: '100%', minWidth: '100%' }}
+                            className="border-none min-h-full min-w-full"
                             allowFullScreen
                         ></iframe>
                     </div>

@@ -27,18 +27,8 @@ export default function HeroSlideshow() {
     }, [current]);
 
     return (
-        <div
-            style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100vw',
-                height: '90vh', // changed from 100vh to 90vh
-                zIndex: -1,
-                overflow: 'hidden'
-            }}
-        >
-            <Image src={slides[current].src} alt="Hero Slide" fill style={{ objectFit: 'cover' }} priority />
+        <div className="absolute top-0 left-0 w-screen h-[90vh] z-[-1] overflow-hidden">
+            <Image src={slides[current].src} alt="Hero Slide" fill className="object-cover" priority />
         </div>
     );
 }

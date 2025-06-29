@@ -16,7 +16,7 @@ export function Markdown({ content, className }) {
 
     return (
         <MarkdownToJsx
-            className={['markdown', className].filter(Boolean).join(' ')}
+            className={['prose prose-invert max-w-none', className].filter(Boolean).join(' ')}
             options={{
                 overrides: {
                     pre: HighlightedCodeBlock

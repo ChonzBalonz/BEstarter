@@ -72,7 +72,7 @@ export default function Page() {
                             src="/images/corgi.jpg"
                             priority
                             fill={true}
-                            style={{ objectFit: 'contain' }}
+                            className="object-contain"
                             sizes="(max-width: 1024px) 100vw, 1024px"
                             alt="Corgi"
                         />

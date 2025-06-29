@@ -51,9 +51,8 @@ const faqData = [
                 &amp; a full box of universal cartridges. <br />
                 • Full-sized pigments suitable for clients of all skin tones. <br />
                 • Fully loaded and in-depth student training manual for all beginners. <br />
-                • In-person live demos from your instructor. <br />
-                • Live model practice for all in-person training courses (unless stated otherwise for specific courses){' '}
-                <br />
+                • In-person live demos from your instructor. <br />• Live model practice for all in-person training
+                courses (unless stated otherwise for specific courses) <br />
                 • Certificate of Completion. <br />• After class support &amp; direct contact with your Instructor
             </>
         )
@@ -162,16 +161,37 @@ export default function Faq() {
     };
 
     return (
-        <div className="faq-container">
+        <div className="faq-container max-w-[600px] mx-auto text-white font-sans">
             {faqData.map((item, idx) => (
-                <div className="faq-item" key={item.question}>
-                    <div
-                        className={`faq-question${openIndexes.includes(idx) ? ' active' : ''}`}
+                <div className="faq-item border-b border-white py-[10px]" key={item.question}>
+                    <button
+                        className={`faq-question w-full text-left font-bold relative pr-6 bg-transparent text-white cursor-pointer focus:outline-none transition-opacity duration-300 ${
+                            openIndexes.includes(idx) ? 'opacity-60' : ''
+                        }`}
                         onClick={() => toggleIndex(idx)}
                     >
                         {item.question}
+                        <span
+                            className={`absolute right-0 top-1/2 -translate-y-1/2 text-2xl transition-transform duration-300 select-none`}
+                        >
+                            {openIndexes.includes(idx) ? '-' : '+'}
+                        </span>
+                    </button>
+                    <div
+                        className={`faq-answer overflow-hidden transition-all duration-400 ease-in-out text-white ${
+                            openIndexes.includes(idx) ? 'max-h-[1000px] py-[10px]' : 'max-h-0 py-0'
+                        } px-0`}
+                        style={{ color: '#fff' }}
+                    >
+                        {/* If answer is a <div> list, apply flex styling */}
+                        {typeof item.answer === 'object' &&
+                        Array.isArray(item.answer.props.children) &&
+                        item.question === 'Our Classes' ? (
+                            <div className="flex flex-col gap-1">{item.answer.props.children}</div>
+                        ) : (
+                            <div className="[&>div]:flex [&>div]:justify-between [&>div]:py-1">{item.answer}</div>
+                        )}
                     </div>
-                    <div className={`faq-answer${openIndexes.includes(idx) ? ' open' : ''}`}>{item.answer}</div>
                 </div>
             ))}
         </div>

@@ -13,9 +13,7 @@ export default function RootLayout({ children }) {
             <head>
                 <link rel="icon" href="/favicon.svg" sizes="any" />
             </head>
-            <body style={{ background: '#000', color: '#fff', margin: 0, padding: 0, minHeight: '100vh' }}>
-                {children}
-            </body>
+            <body className="bg-black text-white min-h-screen m-0 p-0">{children}</body>
         </html>
     );
 }
